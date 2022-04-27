@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(Integer.valueOf(e1.getText().toString())<0){
-                    RotateAnimation anim = new RotateAnimation(0,360,RotateAnimation.RELATIVE_TO_SELF,0.5f,RotateAnimation.RELATIVE_TO_SELF,0.5f);
+                    RotateAnimation anim = new RotateAnimation(0,-90,RotateAnimation.RELATIVE_TO_SELF,0.5f,RotateAnimation.RELATIVE_TO_SELF,1f);
                     anim.setDuration(3000);
                     anim.setFillAfter(true);
                     im1.startAnimation(anim);
